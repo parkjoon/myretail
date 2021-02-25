@@ -1,4 +1,1 @@
-web: npm install --prefix ./server
-web: npm install --prefix ./client
-web: npm build --prefix ./client
-web: node ./server/bin/www
+web: npm install --prefix ./server && npm install --prefix ./client && npm build --prefix ./client && npm start --prefix ./server
