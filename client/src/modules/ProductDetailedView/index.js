@@ -45,7 +45,7 @@ function ProductDetailedView({ product = {}, fetchProduct }) {
       <div className="p20 mc">
         <img alt="" src={getProductImage(product)} height="250px" />
         <h2 className="f1" dangerouslySetInnerHTML={{ __html: product_description?.title }}/>
-        <p>{priceInfo?.currencyUnit}{priceInfo?.price || "See price in cart"}</p>
+        <p>{priceInfo?.currency}{priceInfo?.price || "See price in cart"}</p>
       </div>
       <div className="p20">
         <p className="m0" dangerouslySetInnerHTML={{ __html: product_description?.downstream_description }} />
