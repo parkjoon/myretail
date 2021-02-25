@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npm install --prefix ./server && npm install --prefix ./client && npm build --prefix ./client && node ./server/bin/www"
+    "start": "node ./server/bin/www",
+    "debug": "npm install --prefix ./server && npm install --prefix ./client && npm build --prefix ./client && node ./server/bin/www"
   }
 }
