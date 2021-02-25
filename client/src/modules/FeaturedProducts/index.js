@@ -16,22 +16,25 @@ function FeaturedProducts({ selectedProduct, fetchProduct }) {
   }, []);
 
   return (
-    <div className="flex overflow-auto space-around">
-      {featuredProducts?.map(product => {
-        const tcin = product?.item?.tcin;
-        const isSelected = tcin === selectedProductTcin;
-        return (
-          <button className="cursor-pointer" onClick={() => fetchProduct(tcin)}>
-            <img
-              key={tcin}
-              className={isSelected ? "selectedProduct" : null}
-              alt=""
-              src={getProductImage(product)} height="150px"
-            />
-          </button>
-        );
-      })}
-    </div>
+    <>
+      <h2>Featured Products</h2>
+      <div className="flex overflow-auto space-between">
+        {featuredProducts?.map(product => {
+          const tcin = product?.item?.tcin;
+          const isSelected = tcin === selectedProductTcin;
+          return (
+              <button className="cursor-pointer" onClick={() => fetchProduct(tcin)}>
+                <img
+                    key={tcin}
+                    className={isSelected ? "selectedProduct" : null}
+                    alt=""
+                    src={getProductImage(product)} height="150px"
+                />
+              </button>
+          );
+        })}
+      </div>
+    </>
   );
 }
 

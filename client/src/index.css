@@ -24,8 +24,16 @@ code {
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .m0 {
   margin: 0;
+}
+
+.mc {
+  margin: 0 auto;
 }
 
 .ml20 {
@@ -34,6 +42,10 @@ code {
 
 .mb20 {
   margin-bottom: 20px;
+}
+
+.mt0 {
+  margin-top: 0px;
 }
 
 .mt20 {
@@ -53,8 +65,8 @@ code {
   padding: 20px;
 }
 
-.space-around {
-  justify-content: space-around;
+.space-between {
+  justify-content: space-between;
 }
 
 .text-center {

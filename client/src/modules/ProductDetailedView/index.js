@@ -34,8 +34,8 @@ function ProductDetailedView({ product = {}, fetchProduct }) {
   }, [ product ]);
 
   return (
-    <div className="flex">
-      <div className="p20">
+    <div className="product-detailed-view flex flex-column">
+      <div className="p20 mc">
         <img alt="" src={getProductImage(product)} height="250px" />
         <h2 className="f1" dangerouslySetInnerHTML={{ __html: product_description?.title }}/>
         <p>{priceInfo?.currencyUnit}{priceInfo?.price || "See price in cart"}</p>

@@ -45,7 +45,7 @@ const getProduct = (tcin) => {
       priceInfo: productPriceInfo
     };
     // Update cache
-    ProductCache.set(tcin, data)
+    ProductCache.set(tcin, data);
     return data;
   });
 };

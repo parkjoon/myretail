@@ -8,7 +8,6 @@ function ProductSearch({ fetchProduct }) {
   return (
       <>
         <input
-          className="ml20"
           type="text"
           maxLength={8}
           value={searchValue}
