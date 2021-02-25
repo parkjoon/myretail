@@ -1,0 +1,15 @@
+.globalHeader {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid black;
+}
+
+.globalFooter {
+    border-top: 1px solid black;
+}
+
+.content {
+    max-width: 1024px;
+    margin: 0 auto;
+}
