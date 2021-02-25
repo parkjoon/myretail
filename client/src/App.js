@@ -10,11 +10,22 @@ const initialProductId = "13860428";
 
 function App() {
   const [ product, setProduct ] = useState();
+  const [ errorText, setErrorText ] = useState("");
 
   const fetchProduct = (tcin) => {
+    setErrorText("");
     fetch(`/products/${tcin}`)
-      .then(res => res.json())
-      .then(p => setProduct(p));
+      .then(res => {
+        if (res.status !== 200) {
+          throw new Error("Unable to find product");
+        }
+        return res.json();
+      })
+      .then(p => setProduct(p))
+      .catch(e => {
+        console.error(e);
+        setErrorText(e.message || "An unknown error has occurred");
+      });
   };
 
   useEffect(() => {
@@ -29,6 +40,7 @@ function App() {
 
       <div className="content p20 mc">
         <ProductSearch fetchProduct={fetchProduct} />
+        <div className="red">{errorText}</div>
         <ProductDetailedView product={product} fetchProduct={fetchProduct} />
         <FeaturedProducts selectedProduct={product} fetchProduct={fetchProduct} />
       </div>

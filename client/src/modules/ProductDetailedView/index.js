@@ -14,8 +14,11 @@ function ProductDetailedView({ product = {}, fetchProduct }) {
   } = product;
 
   const [ priceValue, setPriceValue ] = useState(priceInfo?.price);
+  const [ errorText, setErrorText ] = useState("");
 
   const handleUpdatePrice = () => {
+    setErrorText("");
+
     const options = {
       method: "PUT",
       headers: {
@@ -26,6 +29,10 @@ function ProductDetailedView({ product = {}, fetchProduct }) {
     fetch(`/products/${tcin}`, options)
       .then(() => {
         fetchProduct(tcin);
+      })
+      .catch(e => {
+        console.error(e);
+        setErrorText(JSON.stringify(e));
       });
   };
 
@@ -54,6 +61,7 @@ function ProductDetailedView({ product = {}, fetchProduct }) {
           onChange={(e) => setPriceValue(Number(e.target.value))}
         />
         <button className="mb20" onClick={handleUpdatePrice}>Update Price</button>
+        <span className="ml20 red">{errorText}</span>
       </div>
     </div>
   );

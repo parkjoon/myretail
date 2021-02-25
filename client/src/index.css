@@ -45,7 +45,7 @@ code {
 }
 
 .mt0 {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .mt20 {
@@ -63,6 +63,10 @@ code {
 
 .p20 {
   padding: 20px;
+}
+
+.red {
+  color: #cc0901;
 }
 
 .space-between {

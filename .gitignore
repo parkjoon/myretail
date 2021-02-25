@@ -9,6 +9,7 @@ node_modules/
 coverage/
 
 # production
+/client/build
 # build/
 # Temporarily build locally because we don't have CI
 
