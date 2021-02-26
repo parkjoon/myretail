@@ -31,6 +31,10 @@ class LRUCache {
     }
     this.cache.set(key, value);
   }
+
+  delete(key) {
+    this.cache.delete(key);
+  }
 }
 
 module.exports = LRUCache;
