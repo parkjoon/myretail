@@ -10,21 +10,23 @@ const initialProductId = "13860428";
 
 function App() {
   const [ product, setProduct ] = useState();
-  const [ errorText, setErrorText ] = useState("");
+  const [ errorText, setErrorText ] = useState();
 
   const fetchProduct = (tcin) => {
-    setErrorText("");
+    setErrorText();
     fetch(`/products/${tcin}`)
       .then(res => {
-        if (res.status !== 200) {
-          throw new Error("Unable to find product");
+        if (res.ok) {
+          return res.json();
+        } else {
+          return res.text().then(msg => {
+            throw new Error(msg);
+          });
         }
-        return res.json();
       })
       .then(p => setProduct(p))
       .catch(e => {
-        console.error(e);
-        setErrorText(e.message || "An unknown error has occurred");
+        setErrorText(e.message || "An unknown error occurred");
       });
   };
 

@@ -34,43 +34,46 @@ const getProduct = (tcin) => {
 
 var router = express.Router();
 
-router.get('/', async (req, res, next) => {
+router.get('/', async (req, res) => {
   let products = [];
   const promises = featuredProductIds.map(tcin => getProduct(tcin));
   await Promise.all(promises).then(responses => {
     products = responses;
   }).catch(e => {
-    next(e);
+    res.status(404).send(e.message);
   });
   res.send(products);
 });
 
-router.get('/:tcin', async (req, res, next) => {
+router.get('/:tcin', async (req, res) => {
   try {
     const tcin = req.params.tcin;
     const result = await getProduct(tcin);
     res.send(result);
   } catch (e) {
-    next(e);
+    res.status(404).send(e.message);
   }
 });
 
-router.put('/:tcin', async (req, res, next) => {
-  try {
-    const tcin = req.params.tcin;
-    const { price, currency } = req.body;
+router.put('/:tcin', async (req, res) => {
+  const tcin = req.params.tcin;
+  const { price, currency } = req.body;
 
+  const isPriceValid = Boolean(
+    String(price).match(/^\d*(\.\d{1,2})?$/g)
+  );
+  if (isPriceValid) {
     const originalPriceInfo = await getPriceInfo(tcin);
     await setPriceInfo(tcin, JSON.stringify({
-      price,
+      price: Number(price),
       currency: currency || JSON.parse(originalPriceInfo)?.currency || '$'
     }));
     // Don't want to serve invalid price.
     ProductCache.delete(tcin);
 
     res.status(originalPriceInfo ? 200 : 201).send();
-  } catch(e) {
-    next(e);
+  } else {
+    res.status(400).send('Price value is not valid. Accepts numbers up to 2 decimal places.');
   }
 });
 

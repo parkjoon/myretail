@@ -14,10 +14,10 @@ function ProductDetailedView({ product = {}, fetchProduct }) {
   } = product;
 
   const [ priceValue, setPriceValue ] = useState(priceInfo?.price);
-  const [ errorText, setErrorText ] = useState("");
+  const [ errorText, setErrorText ] = useState();
 
   const handleUpdatePrice = () => {
-    setErrorText("");
+    setErrorText();
 
     const options = {
       method: "PUT",
@@ -27,12 +27,17 @@ function ProductDetailedView({ product = {}, fetchProduct }) {
       body: JSON.stringify({ price: priceValue })
     };
     fetch(`/products/${tcin}`, options)
-      .then(() => {
-        fetchProduct(tcin);
+      .then(res => {
+        if (res.ok) {
+          fetchProduct(tcin);
+        } else {
+          return res.text().then(msg => {
+            throw new Error(msg);
+          });
+        }
       })
       .catch(e => {
-        console.error(e);
-        setErrorText(JSON.stringify(e));
+        setErrorText(e.message || "An unknown error occurred");
       });
   };
 
