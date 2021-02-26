@@ -117,6 +117,7 @@
   * Enable HTTPS
   * Place PUT operation under API key or public key
   * Client side API requests should be routed internally
+  * Add input sanitization when updating price
 
 * Performance
 
@@ -135,7 +136,7 @@
   * Split up frontend and backend into separate work flows
   * Containerize each solution and deploy, scale, and monitor with Kubernetes
     * Fast and robust deployment & scaling tools
-
+  * Completely separate backend tests and mocks into a separate mock server.
   * Integrate end to end CI & CD solutions
   * Create frontend app unit, integration, and functional tests
     * React Testing Library (for integration tests)

@@ -37,4 +37,6 @@ class LRUCache {
   }
 }
 
-module.exports = LRUCache;
+const ProductCache = new LRUCache(3);
+
+module.exports = ProductCache;

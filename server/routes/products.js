@@ -1,40 +1,14 @@
-var express = require('express');
+const express = require('express');
 
-var LRUCache = require('../lru-cache');
-var dataAccess = require('../data-access');
-const { getPriceInfo, setPriceInfo, getProductDetails } = dataAccess;
-
-const ProductCache = new LRUCache(3);
+const ProductCache = require('../utils/product-cache');
+const dataAccess = require('../utils/data-access');
+const { getPriceInfo, setPriceInfo } = dataAccess;
+const getProduct = require('../utils/get-product');
+const isPriceValid = require('../utils/is-price-valid');
 
 const featuredProductIds = ['13860428', '54456119', '13264003', '12954218'];
 
-const isPriceValid = (price) => Boolean(
-  String(price).match(/^\d*(\.\d{1,2})?$/g)
-);
-
-const getProduct = (tcin) => {
-  // Check cache first
-  const cachedValue = ProductCache.get(tcin);
-  if (cachedValue) {
-    return cachedValue;
-  }
-
-  const getProductPriceInfo = getPriceInfo(tcin);
-  return Promise.all([
-    getProductDetails(tcin),
-    getProductPriceInfo
-  ]).then(([ productDetails, productPriceInfo ]) => {
-    const data = {
-      ...productDetails.data.product,
-      priceInfo: JSON.parse(productPriceInfo)
-    };
-    // Update cache
-    ProductCache.set(tcin, data);
-    return data;
-  });
-};
-
-var router = express.Router();
+const router = express.Router();
 
 router.get('/', async (req, res) => {
   let products = [];

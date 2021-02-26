@@ -3,7 +3,7 @@ var util = require('util');
 var axios = require('axios');
 
 const bootstrapData = require('./bootstrap-data.json');
-const mockProducts = require('./tests/fixtures/featured-products.json');
+const mockProducts = require('../tests/fixtures/featured-products.json');
 
 const isTestEnv = process.env.NODE_ENV === 'test';
 const testRedisStore = {};
