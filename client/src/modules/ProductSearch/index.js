@@ -5,18 +5,21 @@ import { useState } from "react";
 function ProductSearch({ fetchProduct }) {
   const [ searchValue, setSearchValue ] = useState("");
 
+  const handleProductSearch = e => {
+    e.preventDefault();
+    fetchProduct(searchValue);
+  };
+
   return (
-      <>
-        <input
-          type="text"
-          maxLength={8}
-          value={searchValue}
-          onChange={(e) => setSearchValue(e.target.value)}
-        />
-        <button className="mb20" onClick={() => fetchProduct(searchValue)}>
-          Search Product
-        </button>
-      </>
+    <form onSubmit={handleProductSearch}>
+      <input
+        type="text"
+        maxLength={8}
+        value={searchValue}
+        onChange={(e) => setSearchValue(e.target.value)}
+      />
+      <input className="mb20" type="submit" value="Search Product" />
+    </form>
   );
 }
 

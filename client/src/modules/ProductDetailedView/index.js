@@ -16,7 +16,8 @@ function ProductDetailedView({ product = {}, fetchProduct }) {
   const [ priceValue, setPriceValue ] = useState(priceInfo?.price);
   const [ errorText, setErrorText ] = useState();
 
-  const handleUpdatePrice = () => {
+  const handleUpdatePrice = (e) => {
+    e.preventDefault();
     setErrorText();
 
     const options = {
@@ -59,13 +60,16 @@ function ProductDetailedView({ product = {}, fetchProduct }) {
             (b, i) => <div key={i} dangerouslySetInnerHTML={{ __html: b }} />)
           }
         </div>
-        <input
-          className="mt20"
-          type="number"
-          value={priceValue}
-          onChange={(e) => setPriceValue(Number(e.target.value))}
-        />
-        <button className="mb20" onClick={handleUpdatePrice}>Update Price</button>
+        <form onSubmit={handleUpdatePrice}>
+          <input
+            className="mt20"
+            type="number"
+            step="any"
+            value={priceValue}
+            onChange={(e) => setPriceValue(Number(e.target.value))}
+          />
+          <input className="mb20" type="submit" value="Update Price" />
+        </form>
         <span className="ml20 red">{errorText}</span>
       </div>
     </div>
