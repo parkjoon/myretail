@@ -1,10 +1,6 @@
 const isPriceValid = require('../utils/is-price-valid');
 
 describe('isValidPrice(price) helper', () => {
-  it('should test that true === true', () => {
-    expect(true).toBe(true);
-  });
-
   it('returns true for any positive whole number', () => {
     expect(isPriceValid(0)).toBe(true);
     expect(isPriceValid(1)).toBe(true);
