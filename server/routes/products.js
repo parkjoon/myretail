@@ -1,13 +1,16 @@
 var express = require('express');
-var axios = require('axios');
 
 var LRUCache = require('../lru-cache');
-var dataConnections = require('../data-connections');
-const { getPriceInfo, setPriceInfo, productAPI } = dataConnections;
+var dataAccess = require('../data-access');
+const { getPriceInfo, setPriceInfo, getProductDetails } = dataAccess;
 
 const ProductCache = new LRUCache(3);
 
 const featuredProductIds = ['13860428', '54456119', '13264003', '12954218'];
+
+const isPriceValid = (price) => Boolean(
+  String(price).match(/^\d*(\.\d{1,2})?$/g)
+);
 
 const getProduct = (tcin) => {
   // Check cache first
@@ -16,10 +19,9 @@ const getProduct = (tcin) => {
     return cachedValue;
   }
 
-  const getProductDetails = axios.get(`${productAPI.baseUrl}/${tcin}?${productAPI.queryParams}`);
   const getProductPriceInfo = getPriceInfo(tcin);
   return Promise.all([
-    getProductDetails,
+    getProductDetails(tcin),
     getProductPriceInfo
   ]).then(([ productDetails, productPriceInfo ]) => {
     const data = {
@@ -59,10 +61,7 @@ router.put('/:tcin', async (req, res) => {
   const tcin = req.params.tcin;
   const { price, currency } = req.body;
 
-  const isPriceValid = Boolean(
-    String(price).match(/^\d*(\.\d{1,2})?$/g)
-  );
-  if (isPriceValid) {
+  if (isPriceValid(price)) {
     const originalPriceInfo = await getPriceInfo(tcin);
     await setPriceInfo(tcin, JSON.stringify({
       price: Number(price),

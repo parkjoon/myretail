@@ -1,0 +1,1227 @@
+[
+  {
+    "product": {
+      "priceInfo": {
+        "price": 13.86,
+        "currency": "$"
+      },
+      "bulk_ship": {
+        "tcins": [
+          {
+            "tcin": "13860428",
+            "handlingItemCharge": {
+              "itemBulky": false
+            }
+          }
+        ]
+      },
+      "question_answer_statistics": {
+        "productId": "13860428",
+        "questionCount": 0
+      },
+      "available_to_promise_network": {
+        "product_id": "13860428",
+        "id_type": "TCIN",
+        "available_to_promise_quantity": 30.0,
+        "street_date": "2011-11-15T06:00:00.000Z",
+        "availability": "AVAILABLE",
+        "online_available_to_promise_quantity": 30.0,
+        "stores_available_to_promise_quantity": 0.0,
+        "availability_status": "IN_STOCK",
+        "multichannel_options": [],
+        "is_infinite_inventory": false,
+        "loyalty_availability_status": "IN_STOCK",
+        "loyalty_purchase_start_date_time": "1970-01-01T00:00:00.000Z",
+        "is_loyalty_purchase_enabled": false,
+        "is_out_of_stock_in_all_store_locations": false,
+        "is_out_of_stock_in_all_online_locations": false
+      },
+      "item": {
+        "tcin": "13860428",
+        "bundle_components": {},
+        "dpci": "058-34-0436",
+        "upc": "025192110306",
+        "product_description": {
+          "title": "The Big Lebowski (Blu-ray)",
+          "downstream_description": "Jeff \"The Dude\" Lebowski (Bridges) is the victim of mistaken identity. Thugs break into his apartment in the errant belief that they are accosting Jeff Lebowski, the eccentric millionaire philanthropist, not the laid-back, unemployed Jeff Lebowski. In the aftermath, \"The Dude\" seeks restitution from his wealthy namesake. He and his buddies (Goodman and Buscemi) are swept up in a kidnapping plot that quickly spins out of control.",
+          "bullet_description": [
+            "<B>Movie MPAA Rating:</B> R",
+            "<B>Movie Studio:</B> Universal Studios",
+            "<B>Movie Genre:</B> Comedy",
+            "<B>Run Time (minutes):</B> 119",
+            "<B>Software Format:</B> Blu-ray",
+            "<B>Language:</B> English"
+          ]
+        },
+        "buy_url": "https://www.target.com/p/the-big-lebowski-blu-ray/-/A-13860428",
+        "enrichment": {
+          "images": [
+            {
+              "base_url": "https://target.scene7.com/is/image/Target/",
+              "primary": "GUEST_44aeda52-8c28-4090-85f1-aef7307ee20e",
+              "content_labels": [
+                {
+                  "image_url": "GUEST_44aeda52-8c28-4090-85f1-aef7307ee20e"
+                }
+              ]
+            }
+          ]
+        },
+        "return_method": "This item can be returned to any Target store or Target.com.",
+        "handling": {},
+        "recall_compliance": {
+          "is_product_recalled": false
+        },
+        "tax_category": {
+          "tax_class": "G",
+          "tax_code_id": 99999,
+          "tax_code": "99999"
+        },
+        "display_option": {
+          "is_size_chart": false
+        },
+        "fulfillment": {
+          "is_po_box_prohibited": true,
+          "po_box_prohibited_message": "We regret that this item cannot be shipped to PO Boxes.",
+          "box_percent_filled_by_volume": 0.27,
+          "box_percent_filled_by_weight": 0.43,
+          "box_percent_filled_display": 0.43
+        },
+        "package_dimensions": {
+          "weight": "0.18",
+          "weight_unit_of_measure": "POUND",
+          "width": "5.33",
+          "depth": "6.65",
+          "height": "0.46",
+          "dimension_unit_of_measure": "INCH"
+        },
+        "environmental_segmentation": {
+          "is_hazardous_material": false,
+          "has_lead_disclosure": false
+        },
+        "manufacturer": {},
+        "product_vendors": [
+          {
+            "id": "1984811",
+            "manufacturer_style": "025192110306",
+            "vendor_name": "Ingram Entertainment"
+          },
+          {
+            "id": "4667999",
+            "manufacturer_style": "61119422",
+            "vendor_name": "UNIVERSAL HOME VIDEO"
+          },
+          {
+            "id": "1979650",
+            "manufacturer_style": "61119422",
+            "vendor_name": "Universal Home Ent PFS"
+          }
+        ],
+        "product_classification": {
+          "product_type": "542",
+          "product_type_name": "ELECTRONICS",
+          "item_type_name": "Movies",
+          "item_type": {
+            "type": 300752,
+            "name": "Movies"
+          }
+        },
+        "product_brand": {
+          "brand": "Universal Home Video",
+          "manufacturer_brand": "Universal Home Video",
+          "facet_id": "55zki"
+        },
+        "item_state": "READY_FOR_LAUNCH",
+        "specifications": [],
+        "mpaa_rating": {
+          "url": "https://Img1.targetimg1.com/sites/html/TargetOnline/help/common/Movie_R_Rating.html",
+          "image": "https://Img1.targetimg1.com/wcsstore/TargetSAS/images/109776_R.jpg",
+          "rating": "r"
+        },
+        "attributes": {
+          "gift_wrapable": "Y",
+          "has_prop65": "N",
+          "is_hazmat": "N",
+          "manufacturing_brand": "Universal Home Video",
+          "max_order_qty": 10,
+          "street_date": "2011-11-15",
+          "media_format": "Blu-ray",
+          "merch_class": "MOVIES",
+          "merch_classid": 58,
+          "merch_subclass": 34,
+          "return_method": "This item can be returned to any Target store or Target.com.",
+          "ship_to_restriction": "Guam (see also separate entry under GU),Virgin Islands, U.S.,United States Minor Outlying Islands,American Samoa (see also separate entry under AS),Puerto Rico (see also separate entry under PR),Northern Mariana Islands,APO/FPO"
+        },
+        "country_of_origin": "US",
+        "relationship_type_code": "Stand Alone",
+        "subscription_eligible": false,
+        "ribbons": [],
+        "tags": [],
+        "ship_to_restriction": "This item cannot be shipped to the following locations: Guam, Virgin Islands, U.S., United States Minor Outlying Islands, American Samoa, Puerto Rico, Northern Mariana Islands, APO/FPO",
+        "estore_item_status_code": "A",
+        "is_cart_add_on": true,
+        "eligibility_rules": {
+          "add_on": {
+            "is_active": true
+          }
+        },
+        "is_proposition_65": false,
+        "return_policies": {
+          "user": "Regular Guest",
+          "policyDays": "30",
+          "guestMessage": "This item must be returned within 30 days of the in-store purchase, ship date, or online order pickup. See return policy for details."
+        },
+        "packaging": {
+          "is_retail_ticketed": false
+        }
+      }
+    }
+  },
+  {
+    "product": {
+      "priceInfo": {
+        "price": 54.45,
+        "currency": "$"
+      },
+      "question_answer_statistics": {
+        "productId": "54456119",
+        "questionCount": 0
+      },
+      "bulk_ship": {
+        "tcins": [
+          {
+            "tcin": "54456119",
+            "handlingItemCharge": {
+              "itemBulky": false
+            }
+          }
+        ]
+      },
+      "available_to_promise_network": {
+        "product_id": "54456119",
+        "id_type": "TCIN",
+        "available_to_promise_quantity": 26951.0,
+        "availability": "AVAILABLE",
+        "online_available_to_promise_quantity": 3.0,
+        "stores_available_to_promise_quantity": 26951.0,
+        "availability_status": "IN_STOCK",
+        "multichannel_options": [
+          "HOLD",
+          "SHIPGUEST",
+          "SCHEDULED_DELIVERY"
+        ],
+        "is_infinite_inventory": false,
+        "loyalty_availability_status": "IN_STOCK",
+        "loyalty_purchase_start_date_time": "1970-01-01T00:00:00.000Z",
+        "is_loyalty_purchase_enabled": false,
+        "is_out_of_stock_in_all_store_locations": false,
+        "is_out_of_stock_in_all_online_locations": false
+      },
+      "item": {
+        "tcin": "54456119",
+        "bundle_components": {},
+        "dpci": "212-02-0754",
+        "upc": "085239044926",
+        "product_description": {
+          "title": "Creamy Peanut Butter 40oz - Good &#38; Gather&#8482;",
+          "downstream_description": "For a go-to condiment in your kitchen, make sure you have Creamy Peanut Butter from Good & Gather™ on hand. This classic-style peanut butter is smooth and creamy for easy spreading and mixing — perfect for whipping up a batch of your famous peanut butter cookies or blending into a post-workout smoothie. Create a classic PB&J sandwich by pairing with your favorite jelly and type of bread, or mix with chocolate spread and stir into your oatmeal for a warm treat. However you choose to enjoy it, you'll love the peanuty taste and creamy texture of this classic smooth peanut butter, as well as the 7 grams of protein this peanut butter provides in every serving.<br /><br />Every product that carries the Good & Gather™ name starts with quality ingredients that deliver great taste, making it easier for you and your family to eat well, every day. We promise you’ll love each bite, or your money back.",
+          "bullet_description": [
+            "<B>Contains:</B> Soy, Peanuts",
+            "<B>Consistency:</B> Creamy",
+            "<B>State of Readiness:</B> Ready to Eat",
+            "<B>Package Quantity:</B> 1",
+            "<B>Package type:</B> Individual Item Multi-Serving",
+            "<B>Net weight:</B> 40  Ounces"
+          ],
+          "soft_bullets": {
+            "title": "highlights",
+            "bullets": [
+              "Peanut butter is a classic go-to for sandwiches and snacking",
+              "Includes 7g of protein; see nutrition information for fat content",
+              "Creamy peanut butter is easy to spread"
+            ]
+          }
+        },
+        "buy_url": "https://www.target.com/p/creamy-peanut-butter-40oz-good-38-gather-8482/-/A-54456119",
+        "enrichment": {
+          "images": [
+            {
+              "base_url": "https://target.scene7.com/is/image/Target/",
+              "primary": "GUEST_c94ed4d8-552f-47df-b636-5c2c423be19d",
+              "alternate_urls": [
+                "GUEST_26c05d67-4bc7-4beb-a319-4b6b5500990e"
+              ],
+              "content_labels": [
+                {
+                  "image_url": "GUEST_c94ed4d8-552f-47df-b636-5c2c423be19d"
+                },
+                {
+                  "image_url": "GUEST_26c05d67-4bc7-4beb-a319-4b6b5500990e"
+                }
+              ]
+            }
+          ],
+          "nutrition_facts": {
+            "ingredients": "ROASTED PEANUTS, SUGAR, CONTAINS 2% OR LESS OF: MOLASSES, FULLY HYDROGENATED VEGETABLE OIL (RAPESEED, COTTONSEED, SOYBEAN), SALT.",
+            "warning": "CONTAINS PEANUT",
+            "prepared_count": 1,
+            "value_prepared_list": [
+              {
+                "prepared_type": 0,
+                "serving_size": "2",
+                "serving_size_unit_of_measurement": "Tbsp",
+                "servings_per_container": "ABOUT 35",
+                "nutrients": [
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Added Sugars",
+                    "quantity": 2.0,
+                    "unit_of_measurement": "g",
+                    "percentage": 4.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Calcium",
+                    "quantity": 0.0,
+                    "unit_of_measurement": "mg",
+                    "percentage": 0.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Calories",
+                    "quantity": 190.0,
+                    "unit_of_measurement": "Cal"
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Cholesterol",
+                    "quantity": 0.0,
+                    "unit_of_measurement": "mg",
+                    "percentage": 0.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Dietary Fiber",
+                    "quantity": 2.0,
+                    "unit_of_measurement": "g",
+                    "percentage": 7.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Iron",
+                    "quantity": 0.7,
+                    "unit_of_measurement": "mg",
+                    "percentage": 4.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Potassium",
+                    "quantity": 200.0,
+                    "unit_of_measurement": "mg",
+                    "percentage": 4.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Protein",
+                    "quantity": 7.0,
+                    "unit_of_measurement": "g",
+                    "percentage": 6.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Saturated Fat",
+                    "quantity": 2.5,
+                    "unit_of_measurement": "g",
+                    "percentage": 13.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Sodium",
+                    "quantity": 130.0,
+                    "unit_of_measurement": "mg",
+                    "percentage": 6.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Total Carbohydrate",
+                    "quantity": 7.0,
+                    "unit_of_measurement": "g",
+                    "percentage": 3.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Total Fat",
+                    "quantity": 15.0,
+                    "unit_of_measurement": "g",
+                    "percentage": 19.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Total Sugars",
+                    "quantity": 3.0,
+                    "unit_of_measurement": "g"
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Trans Fat",
+                    "quantity": 0.0,
+                    "unit_of_measurement": "g"
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Vitamin D",
+                    "quantity": 0.0,
+                    "unit_of_measurement": "mcg",
+                    "percentage": 0.0
+                  }
+                ]
+              }
+            ],
+            "nutrition_label_type_code": "LEGACY_FORMAT"
+          },
+          "videos": [
+            {
+              "video_sequence": 1,
+              "video_title": "Good & Gather™ Creamy Peanut Butter 40oz",
+              "video_poster_image": "//target.scene7.com/is/image/Target/GUEST_ece8cf42-fed5-46a3-8c48-d9174a222066",
+              "video_length_seconds": 18,
+              "video_files": [
+                {
+                  "video_url": "//target.scene7.com/is/content/Target/GUEST_fd3d7bb9-9ef4-4d63-be17-5620beef525c_Flash9_Autox720p_2600k",
+                  "mime_type": "video/mp4",
+                  "video_height_pixels": 720
+                }
+              ],
+              "video_captions": [
+                {
+                  "language": "EN",
+                  "caption_url": "//target.scene7.com/is/content/Target/GUEST_57ae60ff-dcb7-43eb-8d7f-f1afb7bf15d6"
+                }
+              ]
+            }
+          ]
+        },
+        "return_method": "This item can be returned to any Target store or Target.com.",
+        "handling": {},
+        "recall_compliance": {
+          "is_product_recalled": false
+        },
+        "tax_category": {
+          "tax_class": "F",
+          "tax_code_id": 9022,
+          "tax_code": "09022"
+        },
+        "display_option": {
+          "is_size_chart": false
+        },
+        "fulfillment": {
+          "is_po_box_prohibited": false,
+          "box_percent_filled_by_volume": 1.69,
+          "box_percent_filled_by_weight": 6.42,
+          "box_percent_filled_display": 6.42
+        },
+        "package_dimensions": {
+          "weight": "2.7",
+          "weight_unit_of_measure": "POUND",
+          "width": "3.91",
+          "depth": "6.85",
+          "height": "3.75",
+          "dimension_unit_of_measure": "INCH"
+        },
+        "environmental_segmentation": {
+          "is_hazardous_material": false,
+          "has_lead_disclosure": false
+        },
+        "manufacturer": {},
+        "product_vendors": [
+          {
+            "id": "2675598",
+            "manufacturer_style": "85239044926",
+            "vendor_name": "CONAGRA FOODS SALES INC."
+          },
+          {
+            "id": "1302545",
+            "manufacturer_style": "0754",
+            "vendor_name": "GOLDEN BOY FOODS LTD."
+          }
+        ],
+        "product_classification": {
+          "product_type": "109420",
+          "product_type_name": "GROCERY",
+          "item_type_name": "spreads",
+          "item_type": {
+            "type": 437279,
+            "name": "Nut and Seed Butters"
+          }
+        },
+        "product_brand": {
+          "brand": "Good & Gather",
+          "manufacturer_brand": "Good & Gather",
+          "facet_id": "yfqzk"
+        },
+        "item_state": "READY_FOR_LAUNCH",
+        "specifications": [],
+        "attributes": {
+          "gift_wrapable": "Y",
+          "has_prop65": "N",
+          "is_hazmat": "N",
+          "manufacturing_brand": "Good & Gather",
+          "max_order_qty": 10,
+          "merch_class": "MEAL ESSENTIALS",
+          "merch_classid": 212,
+          "merch_subclass": 2,
+          "return_method": "This item can be returned to any Target store or Target.com."
+        },
+        "country_of_origin": "US",
+        "relationship_type_code": "Stand Alone",
+        "subscription_eligible": false,
+        "disclaimer": {
+          "type": "Grocery Disclaimer",
+          "description": "Content on this site is for reference purposes only.  Target does not represent or warrant that the nutrition, ingredient, allergen and other product information on our Web or Mobile sites are accurate or complete, since this information comes from the product manufacturers.  On occasion, manufacturers may improve or change their product formulas and update their labels.  We recommend that you do not rely solely on the information presented on our Web or Mobile sites and that you review the product's label or contact the manufacturer directly if you have specific product concerns or questions.  If you have specific healthcare concerns or questions about the products displayed, please contact your licensed healthcare professional for advice or answers. Any additional pictures are suggested servings only."
+        },
+        "exclusive_callout": "Only At Target",
+        "ribbons": [
+          "Only At Target"
+        ],
+        "tags": [],
+        "regulatory_data": [
+          {
+            "identifier": "NUTRITION_FACTS_FLAG",
+            "url": "https://img1.targetimg1.com/wcsstore/TargetSAS/html/p/nutrition/54/45/61/54456119_NutritionFacts.html"
+          }
+        ],
+        "estore_item_status_code": "A",
+        "is_cart_add_on": true,
+        "eligibility_rules": {
+          "add_on": {
+            "is_active": true
+          },
+          "inventory_notification_to_guest_excluded": {
+            "is_active": true
+          },
+          "hold": {
+            "is_active": true
+          },
+          "ship_to_guest": {
+            "is_active": true
+          },
+          "scheduled_delivery": {
+            "is_active": true
+          }
+        },
+        "is_proposition_65": false,
+        "return_policies": {
+          "user": "Regular Guest",
+          "policyDays": "365",
+          "guestMessage": "This item must be returned within 365 days of the in-store purchase, ship date, or online order pickup. See return policy for details."
+        },
+        "packaging": {
+          "is_retail_ticketed": false
+        }
+      },
+      "circle_offers": {
+        "universal_offer_exists": false,
+        "non_universal_offer_exists": true
+      }
+    }
+  },
+  {
+    "product": {
+      "priceInfo": {
+        "price": 13.26,
+        "currency": "$"
+      },
+      "bulk_ship": {
+        "tcins": [
+          {
+            "tcin": "13264003",
+            "handlingItemCharge": {
+              "itemBulky": false
+            }
+          }
+        ]
+      },
+      "question_answer_statistics": {
+        "productId": "13264003",
+        "questionCount": 1
+      },
+      "available_to_promise_network": {
+        "product_id": "13264003",
+        "id_type": "TCIN",
+        "available_to_promise_quantity": 52342.0,
+        "availability": "AVAILABLE",
+        "online_available_to_promise_quantity": 0.0,
+        "stores_available_to_promise_quantity": 52342.0,
+        "availability_status": "IN_STOCK",
+        "multichannel_options": [
+          "HOLD",
+          "SHIPGUEST",
+          "SCHEDULED_DELIVERY"
+        ],
+        "is_infinite_inventory": false,
+        "loyalty_availability_status": "IN_STOCK",
+        "loyalty_purchase_start_date_time": "1970-01-01T00:00:00.000Z",
+        "is_loyalty_purchase_enabled": false,
+        "is_out_of_stock_in_all_store_locations": false,
+        "is_out_of_stock_in_all_online_locations": true
+      },
+      "item": {
+        "tcin": "13264003",
+        "bundle_components": {},
+        "dpci": "212-02-0051",
+        "upc": "051500243213",
+        "product_description": {
+          "title": "Jif Natural Creamy Peanut Butter - 40oz",
+          "downstream_description": "Our Natural Creamy Peanut Butter Spread is made with five simple ingredients for a naturally delicious taste you'll love. Contains 90% peanuts. See nutrition information for fat and saturated fat content. No stirring required!  Natural ingredients, minimal oil separation is natural. Perfect for sandwiches, baking, and spoons. Choosy families choose Jif - try some today!",
+          "bullet_description": [
+            "<B>Contains:</B> Peanuts",
+            "<B>May Contain:</B> Soy",
+            "<B>Consistency:</B> Creamy",
+            "<B>Features:</B> No Preservatives",
+            "<B>Dietary Needs:</B> Gluten Free, Non-GMO Project Verified",
+            "<B>State of Readiness:</B> Ready to Eat",
+            "<B>Package Quantity:</B> 1",
+            "<B>Package type:</B> Individual Item Multi-Serving",
+            "<B>Net weight:</B> 40  Ounces"
+          ],
+          "soft_bullets": {
+            "title": "highlights",
+            "bullets": [
+              "7g Protein Per Serving",
+              "Low Sodium *See Nutrition Information For Fat And Saturated Fat",
+              "Gluten Free, Kosher Pareve",
+              "Natural, Contains No Preservatives",
+              "Non-GMO Certified by NSF"
+            ]
+          }
+        },
+        "buy_url": "https://www.target.com/p/jif-natural-creamy-peanut-butter-40oz/-/A-13264003",
+        "variation": {},
+        "enrichment": {
+          "images": [
+            {
+              "base_url": "https://target.scene7.com/is/image/Target/",
+              "primary": "GUEST_4eccd4ad-692f-4eaf-9198-d79b7c04649f",
+              "alternate_urls": [
+                "GUEST_d5a66d81-0192-45fd-918d-530f6a6514d7",
+                "GUEST_70660d92-4138-407e-bbea-5b69fb23f28d",
+                "GUEST_cd295add-6f26-4f79-811f-1d27821d5b30"
+              ],
+              "content_labels": [
+                {
+                  "image_url": "GUEST_cd295add-6f26-4f79-811f-1d27821d5b30"
+                },
+                {
+                  "image_url": "GUEST_d5a66d81-0192-45fd-918d-530f6a6514d7"
+                },
+                {
+                  "image_url": "GUEST_4eccd4ad-692f-4eaf-9198-d79b7c04649f"
+                },
+                {
+                  "image_url": "GUEST_70660d92-4138-407e-bbea-5b69fb23f28d"
+                }
+              ]
+            }
+          ],
+          "nutrition_facts": {
+            "ingredients": "MADE FROM PEANUTS, SUGAR, PALM OIL, CONTAINS 2% OR LESS OF: SALT, MOLASSES.",
+            "prepared_count": 1,
+            "value_prepared_list": [
+              {
+                "prepared_type": 0,
+                "serving_size": "2",
+                "serving_size_unit_of_measurement": "Tbsp",
+                "servings_per_container": "ABOUT 34",
+                "nutrients": [
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Added Sugars",
+                    "quantity": 2.0,
+                    "unit_of_measurement": "g",
+                    "percentage": 4.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Calcium",
+                    "quantity": 18.0,
+                    "unit_of_measurement": "mg",
+                    "percentage": 2.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Calories",
+                    "quantity": 190.0,
+                    "unit_of_measurement": "Cal"
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Cholesterol",
+                    "quantity": 0.0,
+                    "unit_of_measurement": "mg",
+                    "percentage": 0.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Dietary Fiber",
+                    "quantity": 3.0,
+                    "unit_of_measurement": "g",
+                    "percentage": 9.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Iron",
+                    "quantity": 1.0,
+                    "unit_of_measurement": "mg",
+                    "percentage": 4.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Niacin",
+                    "quantity": 5.0,
+                    "unit_of_measurement": "mg",
+                    "percentage": 30.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Potassium",
+                    "quantity": 193.0,
+                    "unit_of_measurement": "mg",
+                    "percentage": 4.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Protein",
+                    "quantity": 7.0,
+                    "unit_of_measurement": "g",
+                    "percentage": 7.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Saturated Fat",
+                    "quantity": 3.5,
+                    "unit_of_measurement": "g",
+                    "percentage": 17.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Sodium",
+                    "quantity": 80.0,
+                    "unit_of_measurement": "mg",
+                    "percentage": 3.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Total Carbohydrate",
+                    "quantity": 8.0,
+                    "unit_of_measurement": "g",
+                    "percentage": 3.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Total Fat",
+                    "quantity": 16.0,
+                    "unit_of_measurement": "g",
+                    "percentage": 20.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Total Sugars",
+                    "quantity": 4.0,
+                    "unit_of_measurement": "g"
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Trans Fat",
+                    "quantity": 0.0,
+                    "unit_of_measurement": "g"
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Vitamin D",
+                    "quantity": 0.0,
+                    "unit_of_measurement": "mcg",
+                    "percentage": 0.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Vitamin E",
+                    "quantity": 1.0,
+                    "unit_of_measurement": "mg",
+                    "percentage": 10.0
+                  }
+                ]
+              }
+            ],
+            "nutrition_label_type_code": "LEGACY_FORMAT"
+          },
+          "videos": [
+            {
+              "video_sequence": 1,
+              "video_title": "JIF Brand Video",
+              "video_poster_image": "//target.scene7.com/is/image/Target/GUEST_eb2562b2-bd5d-4f73-a57d-2e04dc3d4bb3",
+              "video_length_seconds": 10,
+              "video_files": [
+                {
+                  "video_url": "//target.scene7.com/is/content/Target/GUEST_eb2562b2-bd5d-4f73-a57d-2e04dc3d4bb3_Flash9_Autox720p_2600k",
+                  "mime_type": "video/mp4",
+                  "video_height_pixels": 720
+                }
+              ],
+              "video_captions": [
+                {
+                  "language": "EN",
+                  "caption_url": "//target.scene7.com/is/content/Target/GUEST_396a0e2e-1df0-4afd-852f-343278f7d351"
+                }
+              ]
+            },
+            {
+              "video_sequence": 1,
+              "video_title": "JIF video",
+              "video_poster_image": "//target.scene7.com/is/image/Target/GUEST_eb2562b2-bd5d-4f73-a57d-2e04dc3d4bb3",
+              "video_length_seconds": 10,
+              "video_files": [
+                {
+                  "video_url": "//target.scene7.com/is/content/Target/GUEST_eb2562b2-bd5d-4f73-a57d-2e04dc3d4bb3_Flash9_Autox720p_2600k",
+                  "mime_type": "video/mp4",
+                  "video_height_pixels": 720
+                }
+              ],
+              "video_captions": [
+                {
+                  "language": "EN",
+                  "caption_url": "//target.scene7.com/is/content/Target/GUEST_83a687ce-0c31-4212-b360-3be2a44e1591"
+                }
+              ]
+            }
+          ]
+        },
+        "return_method": "This item can be returned to any Target store or Target.com.",
+        "handling": {},
+        "recall_compliance": {
+          "is_product_recalled": false
+        },
+        "tax_category": {
+          "tax_class": "F",
+          "tax_code_id": 9022,
+          "tax_code": "09022"
+        },
+        "display_option": {
+          "is_size_chart": false
+        },
+        "fulfillment": {
+          "is_po_box_prohibited": false,
+          "box_percent_filled_by_volume": 1.69,
+          "box_percent_filled_by_weight": 6.29,
+          "box_percent_filled_display": 6.29
+        },
+        "package_dimensions": {
+          "weight": "42.343",
+          "weight_unit_of_measure": "OUNCE",
+          "width": "3.9",
+          "depth": "3.9",
+          "height": "6.59",
+          "dimension_unit_of_measure": "INCH"
+        },
+        "environmental_segmentation": {
+          "is_hazardous_material": false,
+          "has_lead_disclosure": false
+        },
+        "manufacturer": {},
+        "product_vendors": [
+          {
+            "id": "4320786",
+            "manufacturer_style": "5150024321",
+            "vendor_name": "SMUCKERS JM CO"
+          }
+        ],
+        "product_classification": {
+          "product_type": "109420",
+          "product_type_name": "GROCERY",
+          "item_type_name": "spreads",
+          "item_type": {
+            "type": 437279,
+            "name": "Nut and Seed Butters"
+          }
+        },
+        "product_brand": {
+          "brand": "Jif",
+          "manufacturer_brand": "Jif",
+          "facet_id": "56db1"
+        },
+        "item_state": "READY_FOR_LAUNCH",
+        "specifications": [],
+        "attributes": {
+          "gift_wrapable": "Y",
+          "has_prop65": "N",
+          "is_hazmat": "N",
+          "manufacturing_brand": "Jif",
+          "max_order_qty": 10,
+          "merch_class": "MEAL ESSENTIALS",
+          "merch_classid": 212,
+          "merch_subclass": 2,
+          "return_method": "This item can be returned to any Target store or Target.com.",
+          "ship_to_restriction": "APO/FPO,United States Minor Outlying Islands,American Samoa (see also separate entry under AS),Northern Mariana Islands,Guam (see also separate entry under GU),Virgin Islands, U.S."
+        },
+        "country_of_origin": "US",
+        "relationship_type_code": "Stand Alone",
+        "subscription_eligible": false,
+        "disclaimer": {
+          "type": "Grocery Disclaimer",
+          "description": "Content on this site is for reference purposes only.  Target does not represent or warrant that the nutrition, ingredient, allergen and other product information on our Web or Mobile sites are accurate or complete, since this information comes from the product manufacturers.  On occasion, manufacturers may improve or change their product formulas and update their labels.  We recommend that you do not rely solely on the information presented on our Web or Mobile sites and that you review the product's label or contact the manufacturer directly if you have specific product concerns or questions.  If you have specific healthcare concerns or questions about the products displayed, please contact your licensed healthcare professional for advice or answers. Any additional pictures are suggested servings only."
+        },
+        "ribbons": [],
+        "tags": [],
+        "regulatory_data": [
+          {
+            "identifier": "NUTRITION_FACTS_FLAG",
+            "url": "https://img1.targetimg1.com/wcsstore/TargetSAS/html/p/nutrition/13/26/40/13264003_NutritionFacts.html"
+          }
+        ],
+        "ship_to_restriction": "This item cannot be shipped to the following locations: APO/FPO, United States Minor Outlying Islands, American Samoa, Northern Mariana Islands, Guam, Virgin Islands, U.S.",
+        "estore_item_status_code": "A",
+        "prepaid_segment": {
+          "minimum_purchase_amount": 0.0,
+          "maximum_purchase_amount": 0.0
+        },
+        "is_cart_add_on": true,
+        "eligibility_rules": {
+          "add_on": {
+            "is_active": true
+          },
+          "inventory_notification_to_guest_excluded": {
+            "is_active": true
+          },
+          "hold": {
+            "is_active": true
+          },
+          "ship_to_guest": {
+            "is_active": true
+          },
+          "scheduled_delivery": {
+            "is_active": true
+          }
+        },
+        "wellness_merchandise_attributes": [
+          {
+            "parent_id": "304049",
+            "parent_name": "wellness standard",
+            "value_id": "825392",
+            "value_name": "Gluten Free",
+            "badge_url": "https://target.scene7.com/is/image/Target/wellness_25c25b609d1c43b7",
+            "wellness_description": "A product that has an unqualified independent third-party certification, or carries an on-pack statement relating to the finished product being gluten-free."
+          },
+          {
+            "parent_id": "304049",
+            "parent_name": "wellness standard",
+            "value_id": "825393",
+            "value_name": "Non-GMO",
+            "badge_url": "https://target.scene7.com/is/image/Target/wellness_3fce9b8de04a4a35",
+            "wellness_description": "A product that has an independent third-party certification, or carries an unqualified on-pack statement relating to the final product being made without genetically engineered ingredients."
+          }
+        ],
+        "is_proposition_65": false,
+        "return_policies": {
+          "user": "Regular Guest",
+          "policyDays": "90",
+          "guestMessage": "This item must be returned within 90 days of the in-store purchase, ship date, or online order pickup. See return policy for details."
+        },
+        "packaging": {
+          "is_retail_ticketed": false
+        }
+      }
+    }
+  },
+  {
+    "product": {
+      "priceInfo": {
+        "price": 12.95,
+        "currency": "$"
+      },
+      "bulk_ship": {
+        "tcins": [
+          {
+            "tcin": "12954218",
+            "handlingItemCharge": {
+              "itemBulky": false
+            }
+          }
+        ]
+      },
+      "question_answer_statistics": {
+        "productId": "12954218",
+        "questionCount": 1
+      },
+      "available_to_promise_network": {
+        "product_id": "12954218",
+        "id_type": "TCIN",
+        "available_to_promise_quantity": 228874.0,
+        "availability": "AVAILABLE",
+        "online_available_to_promise_quantity": 0.0,
+        "stores_available_to_promise_quantity": 228874.0,
+        "availability_status": "IN_STOCK",
+        "multichannel_options": [
+          "HOLD",
+          "SHIPGUEST",
+          "SCHEDULED_DELIVERY"
+        ],
+        "is_infinite_inventory": false,
+        "loyalty_availability_status": "IN_STOCK",
+        "loyalty_purchase_start_date_time": "1970-01-01T00:00:00.000Z",
+        "is_loyalty_purchase_enabled": false,
+        "is_out_of_stock_in_all_store_locations": false,
+        "is_out_of_stock_in_all_online_locations": true
+      },
+      "item": {
+        "tcin": "12954218",
+        "bundle_components": {
+          "is_component": true,
+          "related_master_dpci": "212-14-0029",
+          "related_master_tcin": "81493156"
+        },
+        "dpci": "212-14-0318",
+        "upc": "021000658831",
+        "product_description": {
+          "title": "Kraft Macaroni &#38; Cheese Dinner Original - 7.25oz",
+          "downstream_description": "KRAFT Macaroni and Cheese Original Flavor is a convenient boxed dinner. Kids and adults love the delicious taste of macaroni with cheesy goodness. Our 7.25 ounce mac and cheese dinner includes macaroni pasta and original flavor cheese sauce mix, so you just need milk and margarine or butter to make a tasty mac and cheese, Macaroni and cheese is a quick dinner kids love. With no artificial flavors, no artificial preservatives, and no artificial dyes, KRAFT Macaroni and Cheese is always a great family dinner choice. Preparing macaroni and cheese is a breeze. Just boil the pasta for 7-8 minutes, drain the water and stir in the cheese mix, milk and margarine or butter. Add our macaroni and cheese to your back to school supplies list. Now you can have your KRAFT Mac and Cheese and eat it too.",
+          "bullet_description": [
+            "<B>Contains:</B> Milk, Wheat",
+            "<B>May Contain:</B> Eggs",
+            "<B>State of Readiness:</B> Prepared, Heat and Serve",
+            "<B>Package Quantity:</B> 1",
+            "<B>Pre-package preparation:</B> Dried",
+            "<B>Package type:</B> Individual Item Multi-Serving",
+            "<B>Net weight:</B> .21 Pounds"
+          ],
+          "soft_bullets": {
+            "title": "highlights",
+            "bullets": [
+              "One 7.25 oz. box of Kraft Original Macaroni & Cheese Dinner",
+              "Add our macaroni and cheese to your back to school supplies list",
+              "Try our easy to make mac and cheese with your family's busy school schedule",
+              "Kraft Original Macaroni & Cheese is a convenient boxed dinner",
+              "Box includes macaroni noodles and original flavor cheese sauce mix",
+              "Kraft mac and cheese contains no artificial flavors, no artificial preservatives, and no artificial dyes",
+              "One box makes about 3 servings",
+              "Boxed macaroni and cheese is a quick and easy dinner",
+              "Cheese sauce mix is individually sealed"
+            ]
+          }
+        },
+        "buy_url": "https://www.target.com/p/kraft-macaroni-38-cheese-dinner-original-7-25oz/-/A-12954218",
+        "enrichment": {
+          "images": [
+            {
+              "base_url": "https://target.scene7.com/is/image/Target/",
+              "primary": "GUEST_9d8212f6-55bb-49be-892b-857d00f93514",
+              "alternate_urls": [
+                "GUEST_d2440c87-fad2-4589-8b71-3987651774c8",
+                "GUEST_1296b715-0c42-4808-b9b2-93f234922c65"
+              ],
+              "content_labels": [
+                {
+                  "image_url": "GUEST_d2440c87-fad2-4589-8b71-3987651774c8"
+                },
+                {
+                  "image_url": "GUEST_1296b715-0c42-4808-b9b2-93f234922c65"
+                },
+                {
+                  "image_url": "GUEST_9d8212f6-55bb-49be-892b-857d00f93514"
+                }
+              ]
+            }
+          ],
+          "nutrition_facts": {
+            "ingredients": "Enriched Macaroni (Wheat Flour, Durum Flour, Niacin, Ferrous Sulfate [Iron], Thiamin Mononitrate [Vitamin B1], Riboflavin [Vitamin B2], Folic Acid), Cheese Sauce Mix (Whey, Milkfat, Salt, Milk Protein Concentrate, Sodium Triphosphate, Contains Less than 2% of Tapioca Flour, Citric Acid, Lactic Acid, Sodium Phosphate, Calcium Phosphate, with Paprika, Turmeric, and Annatto Added for Color, Enzymes, Cheese Culture).",
+            "prepared_count": 2,
+            "value_prepared_list": [
+              {
+                "prepared_type": 0,
+                "serving_size": "2.5",
+                "serving_size_unit_of_measurement": "oz",
+                "servings_per_container": "About 3",
+                "nutrients": [
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Calories",
+                    "quantity": 250.0
+                  },
+                  {
+                    "prepared_type": 0,
+                    "master_type": 0,
+                    "name": "Calories From Fat"
+                  }
+                ]
+              },
+              {
+                "prepared_type": 1,
+                "serving_size": "1",
+                "serving_size_unit_of_measurement": "cup",
+                "nutrients": [
+                  {
+                    "prepared_type": 1,
+                    "master_type": 0,
+                    "name": "Calories",
+                    "quantity": 350.0
+                  },
+                  {
+                    "prepared_type": 1,
+                    "master_type": 0,
+                    "name": "Calories From Fat"
+                  }
+                ]
+              }
+            ],
+            "nutrition_label_type_code": "LEGACY_FORMAT"
+          }
+        },
+        "return_method": "This item can be returned to any Target store or Target.com.",
+        "handling": {},
+        "recall_compliance": {
+          "is_product_recalled": false
+        },
+        "tax_category": {
+          "tax_class": "F",
+          "tax_code_id": 9010,
+          "tax_code": "09010"
+        },
+        "display_option": {
+          "is_size_chart": false
+        },
+        "fulfillment": {
+          "is_po_box_prohibited": false,
+          "box_percent_filled_by_volume": 0.67,
+          "box_percent_filled_by_weight": 1.21,
+          "box_percent_filled_display": 1.21
+        },
+        "package_dimensions": {
+          "weight": "0.508",
+          "weight_unit_of_measure": "POUND",
+          "width": "3.52",
+          "depth": "1.58",
+          "height": "7.147",
+          "dimension_unit_of_measure": "INCH"
+        },
+        "environmental_segmentation": {
+          "is_hazardous_material": false,
+          "has_lead_disclosure": false
+        },
+        "manufacturer": {},
+        "product_vendors": [
+          {
+            "id": "2965716",
+            "manufacturer_style": "21000",
+            "vendor_name": "KRAFT FOODS GROUP INC"
+          },
+          {
+            "id": "1213676",
+            "manufacturer_style": "2100001871",
+            "vendor_name": "STORE ONLY DUMMY VENDOR"
+          }
+        ],
+        "product_classification": {
+          "product_type": "109420",
+          "product_type_name": "GROCERY",
+          "item_type_name": "prepared foods",
+          "item_type": {
+            "type": 439602,
+            "name": "Prepared Meals and Sides"
+          }
+        },
+        "product_brand": {
+          "brand": "Kraft",
+          "manufacturer_brand": "Kraft",
+          "facet_id": "5scoh"
+        },
+        "item_state": "READY_FOR_LAUNCH",
+        "specifications": [],
+        "attributes": {
+          "gift_wrapable": "Y",
+          "has_prop65": "N",
+          "is_hazmat": "N",
+          "manufacturing_brand": "Kraft",
+          "max_order_qty": 10,
+          "merch_class": "MEAL ESSENTIALS",
+          "merch_classid": 212,
+          "merch_subclass": 14,
+          "return_method": "This item can be returned to any Target store or Target.com."
+        },
+        "country_of_origin": "US",
+        "relationship_type_code": "Stand Alone",
+        "subscription_eligible": false,
+        "disclaimer": {
+          "type": "Grocery Disclaimer",
+          "description": "Content on this site is for reference purposes only.  Target does not represent or warrant that the nutrition, ingredient, allergen and other product information on our Web or Mobile sites are accurate or complete, since this information comes from the product manufacturers.  On occasion, manufacturers may improve or change their product formulas and update their labels.  We recommend that you do not rely solely on the information presented on our Web or Mobile sites and that you review the product's label or contact the manufacturer directly if you have specific product concerns or questions.  If you have specific healthcare concerns or questions about the products displayed, please contact your licensed healthcare professional for advice or answers. Any additional pictures are suggested servings only."
+        },
+        "ribbons": [],
+        "tags": [],
+        "regulatory_data": [
+          {
+            "identifier": "NUTRITION_FACTS_FLAG",
+            "url": "https://img1.targetimg1.com/wcsstore/TargetSAS/html/p/nutrition/12/95/42/12954218_NutritionFacts.html"
+          }
+        ],
+        "estore_item_status_code": "A",
+        "is_cart_add_on": true,
+        "eligibility_rules": {
+          "add_on": {
+            "is_active": true
+          },
+          "inventory_notification_to_guest_excluded": {
+            "is_active": true
+          },
+          "hold": {
+            "is_active": true
+          },
+          "ship_to_guest": {
+            "is_active": true
+          },
+          "scheduled_delivery": {
+            "is_active": true
+          }
+        },
+        "is_proposition_65": false,
+        "return_policies": {
+          "user": "Regular Guest",
+          "policyDays": "90",
+          "guestMessage": "This item must be returned within 90 days of the in-store purchase, ship date, or online order pickup. See return policy for details."
+        },
+        "packaging": {
+          "is_retail_ticketed": false
+        }
+      }
+    }
+  }
+]
