@@ -1,4 +1,4 @@
-const isPriceValid = require('../utils/is-price-valid');
+const isPriceValid = require('../../utils/is-price-valid');
 
 describe('isValidPrice(price) helper', () => {
   it('returns true for any positive whole number', () => {

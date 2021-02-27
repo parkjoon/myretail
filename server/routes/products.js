@@ -36,10 +36,13 @@ router.put('/:tcin', async (req, res) => {
   const { price, currency } = req.body;
 
   if (isPriceValid(price)) {
-    const originalPriceInfo = await getPriceInfo(tcin);
+    let originalPriceInfo;
+    try {
+      originalPriceInfo = JSON.parse(await getPriceInfo(tcin))
+    } catch (e) {}
     await setPriceInfo(tcin, JSON.stringify({
       price: Number(price),
-      currency: currency || JSON.parse(originalPriceInfo)?.currency || '$'
+      currency: currency || originalPriceInfo?.currency || '$'
     }));
     // Don't want to serve invalid price.
     ProductCache.delete(tcin);

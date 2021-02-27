@@ -53,10 +53,10 @@ function App() {
           <a className="ml20" href="mailto:joonmopark94@gmail.com">joonmopark94@gmail.com</a>
         </p>
         <p className="mt0">
-          <a href="https://www.linkedin.com/in/joon-park" target="_blank">
+          <a href="https://www.linkedin.com/in/joon-park" target="_blank" rel="noreferrer">
             LinkedIn
           </a>
-          <a className="ml20" href="https://github.com/parkjoon/myretail" target="_blank">
+          <a className="ml20" href="https://github.com/parkjoon/myretail" target="_blank" rel="noreferrer">
             GitHub Repo
           </a>
         </p>

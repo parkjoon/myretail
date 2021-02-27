@@ -78,14 +78,16 @@
 
   * isPriceValid helper
     * Returns true for any valid whole number
+    * Converts input to number
     * Returns true for up to 2 decimal places
   * getProduct helper
-    * Returns cached value if found
     * Returns product details and priceInfo
-    * Returns no data when product details call fails
-    * Returns no data when product price info call fails
+    * Returns cached value if found
+    * Returns price info when product details call fails
+    * Returns product details when product price info call fails
+    * Returns no data when both product details and price info calls fail
     * Sets product cache when data resolves successfully
-  * LRU Cache
+  * Product Cache (LRU)
     * Can set max size of cache with constructor
     * Can get value from cache with key
     * Can set value in cache with key and value
@@ -96,17 +98,13 @@
 
   * GET /products/
     * Returns product data for all products
-    * Returns an error if any one of the calls fail
   * GET /products/{tcin}
     * Returns product data for specified tcin
-    * Returns an error when no tcin is specified
-    * Returns an error when product does not exist
+    * Returns an error when invalid tcin is specified
   * PUT /products/{tcin}
     * Price is updated in store
     * Cached product data is removed from cache
     * Uses fallback currency from existing price info data when currency input is missing
-    * Uses fallback currency of "$" when currency input and existing data is missing
-    * Returns a status 200 when price info has updated for an existing key
     * Returns a status 201 when price info has been created for a new key
     * Returns a status 400 error when price is invalid
 

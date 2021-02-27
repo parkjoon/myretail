@@ -44,7 +44,7 @@ function ProductDetailedView({ product = {}, fetchProduct }) {
 
   useEffect(() => {
     setPriceValue(priceInfo?.price);
-  }, [ product ]);
+  }, [ product, priceInfo?.price ]);
 
   return (
     <div className="product-detailed-view flex flex-column">

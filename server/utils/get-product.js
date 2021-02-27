@@ -1,8 +1,8 @@
 const ProductCache = require('./product-cache');
 const dataAccess = require('./data-access');
-const { getPriceInfo, getProductDetails } = dataAccess;
 
-const getProduct = (tcin) => {
+// TODO - Remove getter params and find better way to mock & test edge cases.
+const getProduct = (tcin, getPriceInfo = dataAccess.getPriceInfo, getProductDetails = dataAccess.getProductDetails) => {
   // Check cache first
   const cachedValue = ProductCache.get(tcin);
   if (cachedValue) {
@@ -17,10 +17,16 @@ const getProduct = (tcin) => {
     getProductDetails(tcin),
     getProductPriceInfo
   ]).then(([ productDetails, productPriceInfo ]) => {
+    let parsedProductPriceInfo;
+    try {
+      parsedProductPriceInfo = JSON.parse(productPriceInfo);
+    } catch (e) {
+      // Handle parsing error
+    }
     // Combine product details and price info into a single response.
     const data = {
-      ...productDetails.data.product,
-      priceInfo: JSON.parse(productPriceInfo)
+      ...productDetails?.data?.product,
+      priceInfo: parsedProductPriceInfo
     };
     // Update cache
     ProductCache.set(tcin, data);
