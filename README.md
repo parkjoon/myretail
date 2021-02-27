@@ -40,7 +40,7 @@ Run tests with `yarn test`.
   * Support GET request at /products/{tcin}
   * Support PUT request at /products/{tcin} to update price
 * HQ is in Virginia, with over 200 stores across east coast
-* Data should be avilable to any number of client devices (internal and external)
+* Data should be available to any number of client devices (internal and external)
 
 [Case Study Prompts](/readme-assets/case-study-prompts.docx)
 
@@ -83,7 +83,7 @@ Run tests with `yarn test`.
     * 200 stores * 10 admins = 2000 admins
   * Assume price on average changes once an hour, during business hours only (9 AM - 5 PM) = 8 hours
     * 2000 requests / hour => ~0.5 requests / second
-  * No cache benefit due to earlier assumption that price info must always be accurate
+  * No cache benefits due to earlier assumption that price info must always be accurate
 * If I use Heroku (for POC), then we can expect max 4500 requests / hour => 1.25 requests / second
   * We would not scale in production with Heroku, but hypothetically if we did we need:
     * (1200 req/s (GET) + 0.5 req/s (PUT)) / 1.25 req/s (Heroku dyno) = 960 Heroku dynos
