@@ -50,6 +50,9 @@
   * Assume price on average changes once an hour, during business hours only (9 AM - 5 PM) = 8 hours
     * 2000 requests / hour => ~0.5 requests / second
   * No cache benefit due to earlier assumption that price info must always be accurate
+* If I use Heroku (for POC), then we can expect max 4500 requests / hour => 1.25 requests / second
+  * We would not scale in production with Heroku, but hypothetically if we did we need:
+    * (1200 req/s (GET) + 0.5 req/s (PUT)) / 1.25 req/s (Heroku dyno) = 960 Heroku dynos
 
 ## Proof of Concept
 
@@ -66,6 +69,14 @@
   * key = tcin, value = stringified JSON object of price and currency
 * Use a simple but unoptimized implementation of LRU cache for in memory cache
   * Use ES6 Map
+
+![poc architecture](/readme-assets/poc-architecture.png)
+
+![poc rest api](/readme-assets/poc-rest-api.png)
+
+![poc frontend mock](/readme-assets/poc-frontend-mock.png)
+
+![poc frontend](/readme-assets/poc-frontend.png)
 
 ## Testing
 
@@ -119,6 +130,7 @@
 
 * Performance
 
+  * Need to support minimum 1200 requests/second (see assumptions section)
   * Migrate price info to Cassandra clusters
     * Extremely fast (mostly reads but also writes)
     * Available and partition tolerant (in CAP theorem)
@@ -152,3 +164,4 @@
   * Add more graceful error handling scenarios
   * Validate and throttle API requests
 
+![north star architecture](/readme-assets/north-star-architecture.png)
