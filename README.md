@@ -70,13 +70,21 @@
 * Use a simple but unoptimized implementation of LRU cache for in memory cache
   * Use ES6 Map
 
-![poc architecture](/readme-assets/poc-architecture.png)
+<p align="center">
+  <img width="700px" alt="poc architecture" src="/readme-assets/poc-architecture.png" />
+</p>
 
-![poc rest api](/readme-assets/poc-rest-api.png)
+<p align="center">
+  <img width="700px" alt="poc rest api" src="/readme-assets/poc-rest-api.png" />
+</p>
 
-![poc frontend mock](/readme-assets/poc-frontend-mock.png)
+<p align="center">
+  <img width="700px" alt="poc frontend mock" src="/readme-assets/poc-frontend-mock.png" />
+</p>
 
-![poc frontend](/readme-assets/poc-frontend.png)
+<p align="center">
+  <img width="700px" alt="poc frontend" src="/readme-assets/poc-frontend.png" />
+</p>
 
 ## Testing
 
@@ -164,4 +172,6 @@
   * Add more graceful error handling scenarios
   * Validate and throttle API requests
 
-![north star architecture](/readme-assets/north-star-architecture.png)
+<p align="center">
+  <img width="700px" alt="north star architecture" src="/readme-assets/north-star-architecture.png" />
+</p>
