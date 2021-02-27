@@ -30,6 +30,8 @@ To run the app with no external API dependencies, please run the server with `NO
 
 Run tests with `yarn test`.
 
+View the Heroku hosted version here: <https://myretail-joon.herokuapp.com/>
+
 ## Requirements
 
 * Build a REST API that aggregates product data from multiple sources and responds with JSON
