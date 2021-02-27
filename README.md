@@ -198,6 +198,8 @@ Run tests with `yarn test`.
   <img width="700px" alt="north star architecture" src="/readme-assets/north-star-architecture.png" />
 </p>
 
+[Architecture Diagrams](/readme-assets/architecture.drawio)
+
 ## Lessons Learned
 
 * Too much time spent on the frontend - need to keep focus on requirements
