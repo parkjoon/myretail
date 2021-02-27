@@ -10,6 +10,8 @@
 
 ## Quick Start
 
+View the Heroku hosted version here: <https://myretail-joon.herokuapp.com/>
+
 There are two apps, the frontend react app, and the Express REST API.
 
 Please install dependencies for both separately, build the frontend app, then run start the Express server. 
@@ -29,8 +31,6 @@ To run the app with no external API dependencies, please run the server with `NO
 </p>
 
 Run tests with `yarn test`.
-
-View the Heroku hosted version here: <https://myretail-joon.herokuapp.com/>
 
 ## Requirements
 
