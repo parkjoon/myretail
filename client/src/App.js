@@ -6,6 +6,8 @@ import FeaturedProducts from "./modules/FeaturedProducts";
 import ProductDetailedView from "./modules/ProductDetailedView";
 import ProductSearch from "./modules/ProductSearch";
 
+// Ideally, this initial product data should come from server side render.
+// That is an optimization not yet implemented.
 const initialProductId = "13860428";
 
 function App() {

@@ -4,6 +4,7 @@ class LRUCache {
   constructor(maxSize) {
     // Map maintains order of key insertion.
     this.cache = new Map();
+    // We need to evict key/value when we need to add more than maxSize.
     this.maxSize = maxSize;
   }
 

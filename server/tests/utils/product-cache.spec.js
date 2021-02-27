@@ -13,34 +13,34 @@ describe('ProductCache', () => {
 
   it('sets and gets value in cache with key and value', () => {
     const ProductCache = require('../../utils/product-cache');
-    ProductCache.set("myKey", "myValue");
-    expect(ProductCache.get("myKey")).toBe("myValue");
+    ProductCache.set('myKey', 'myValue');
+    expect(ProductCache.get('myKey')).toBe('myValue');
   });
 
   it('deletes key and value from cache with key', () => {
     const ProductCache = require('../../utils/product-cache');
-    ProductCache.set("myKey", "myValue");
-    expect(ProductCache.get("myKey")).toBe("myValue");
-    ProductCache.delete("myKey");
-    expect(ProductCache.get("myKey")).toBeUndefined();
+    ProductCache.set('myKey', 'myValue');
+    expect(ProductCache.get('myKey')).toBe('myValue');
+    ProductCache.delete('myKey');
+    expect(ProductCache.get('myKey')).toBeUndefined();
   });
 
   it('setting and getting an existing key moves its order to the most recently used position', () => {
     const ProductCache = require('../../utils/product-cache');
-    ProductCache.set("myKey1", "myValue");
-    ProductCache.set("myKey2", "myValue");
-    ProductCache.set("myKey3", "myValue");
-    // At this point, "myKey3" is the most recently used.
+    ProductCache.set('myKey1', 'myValue');
+    ProductCache.set('myKey2', 'myValue');
+    ProductCache.set('myKey3', 'myValue');
+    // At this point, 'myKey3' is the most recently used.
     let iterator = ProductCache.cache.keys();
-    expect(iterator.next().value).toBe("myKey1");
-    expect(iterator.next().value).toBe("myKey2");
-    expect(iterator.next().value).toBe("myKey3");
+    expect(iterator.next().value).toBe('myKey1');
+    expect(iterator.next().value).toBe('myKey2');
+    expect(iterator.next().value).toBe('myKey3');
 
     // Setting myKey1 should make it most recently used.
-    ProductCache.set("myKey1", "myValue");
+    ProductCache.set('myKey1', 'myValue');
     iterator = ProductCache.cache.keys();
-    expect(iterator.next().value).toBe("myKey2");
-    expect(iterator.next().value).toBe("myKey3");
+    expect(iterator.next().value).toBe('myKey2');
+    expect(iterator.next().value).toBe('myKey3');
     expect(iterator.next().value).toBe("myKey1");
 
     // Getting myKey2 should make it most recently used.

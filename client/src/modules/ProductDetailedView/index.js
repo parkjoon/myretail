@@ -13,6 +13,7 @@ function ProductDetailedView({ product = {}, fetchProduct }) {
     } = {}
   } = product;
 
+  // Locally track price input value
   const [ priceValue, setPriceValue ] = useState(priceInfo?.price);
   const [ errorText, setErrorText ] = useState();
 
@@ -30,6 +31,9 @@ function ProductDetailedView({ product = {}, fetchProduct }) {
     fetch(`/products/${tcin}`, options)
       .then(res => {
         if (res.ok) {
+          // If price update was successful, fetch the new product data.
+          // This is not required as, we can locally modify the existing data with
+          // the new data. However, this is an optimization that is not yet implemented.
           fetchProduct(tcin);
         } else {
           return res.text().then(msg => {
