@@ -169,6 +169,8 @@ Run tests with `yarn test`.
   * Migrate price info to Cassandra clusters
     * Extremely fast (mostly reads but also writes)
     * Available and partition tolerant (in CAP theorem)
+    * Use consistent hashing to optimize traffic spread and scaling
+    * Index products by categories based on an assumption the customers will shop based on categories or departments
   * Replace simple LRU cache with memcache with two levels L1 & L2
     * L2 should be a redundant copy of L1 in case of failure
     * Prime cache with historically popular products on server start
