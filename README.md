@@ -25,7 +25,7 @@ Note: the above steps will fetch from the Redsky API and fetch from a Heroku hos
 To run the app with no external API dependencies, please run the server with `NODE_ENV=test yarn start`
 
 <p align="center">
-  <img width="350px" alt="frontend demo" src="/readme-assets/frontend-demo.png" />
+  <img width="450px" alt="frontend demo" src="/readme-assets/frontend-demo.png" />
 </p>
 
 Run tests with `yarn test`.
