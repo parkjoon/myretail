@@ -6,13 +6,12 @@
 * [Proof of Concept](#proof-of-concept)
 * [Testing](#testing)
 * [Production Ready Checklist](#production-ready-checklist)
-* [Lessons Learned](#lessons-learned)
 
 ## Quick Start
 
 View the Heroku hosted version here: <https://myretail-joon.herokuapp.com/>
 
-There are two apps, the frontend react app, and the Express REST API.
+**There are two apps, the frontend react app, and the Express REST API.**
 
 Please install dependencies for both separately, build the frontend app, then run start the Express server. 
 
@@ -34,7 +33,7 @@ Run tests with `yarn test`.
 
 ## Requirements
 
-* Build a REST API that aggregates product data from multiple sources and responds with JSON
+* **Build a REST API that aggregates product data from multiple sources and responds with JSON**
   * Product details will come from redsky.target.com
   * Product price info comes from a database of choice
   * Support GET request at /products/{tcin}
@@ -77,31 +76,31 @@ Run tests with `yarn test`.
     * Using 20-80 rule, 20% of our products generate most of our traffic
       * 10 million * 20% = 2 million products
       * 2 million total products / 1 million products cached = 50% cache hit rate for in memory cache
-  * 1200 requests / second * 50% cache miss rate = 600 requests / second
+  * **1200 requests / second * 50% cache miss rate = 600 requests / second**
 * How many PUT requests can we expect?
   * Assume 10 price "admins" for each store
     * 200 stores * 10 admins = 2000 admins
   * Assume price on average changes once an hour, during business hours only (9 AM - 5 PM) = 8 hours
-    * 2000 requests / hour => ~0.5 requests / second
+    * **2000 requests / hour => ~0.5 requests / second**
   * No cache benefits due to earlier assumption that price info must always be accurate
 * If I use Heroku (for POC), then we can expect max 4500 requests / hour => 1.25 requests / second
   * We would not scale in production with Heroku, but hypothetically if we did we need:
-    * (1200 req/s (GET) + 0.5 req/s (PUT)) / 1.25 req/s (Heroku dyno) = 960 Heroku dynos
+    * **(1200 req/s (GET) + 0.5 req/s (PUT)) / 1.25 req/s (Heroku dyno) = 960 Heroku dynos**
 
 ## Proof of Concept
 
-* Use create-react-app for a simple frontend interface
+* **Use create-react-app for a simple frontend interface**
   * Product search field
   * Product detailed view
   * Featured products
-* Use Express.js to for a REST API web server
+* **Use Express.js to for a REST API web server**
   * GET /products/
   * GET /products/{tcin}
   * PUT /products/{tcin}
-* Fetch product details from Redsky API using Axios
-* Fetch product price info from Redis (hosted by Heroku)
+* **Fetch product details from Redsky API using Axios**
+* **Fetch product price info from Redis (hosted by Heroku)**
   * key = tcin, value = stringified JSON object of price and currency
-* Use a simple but unoptimized implementation of LRU cache for in memory cache
+* **Use a simple but unoptimized implementation of LRU cache for in memory cache**
   * Use ES6 Map
 
 <p align="center">
@@ -175,6 +174,9 @@ Run tests with `yarn test`.
     * Prime cache with historically popular products on server start
   * Add edge caching for frontend assets
   * Add API gateway caching for REST API calls (eg. Redsky calls)
+  * For special events we can expect acute traffic, such as game console releases, create separate caching mechanisms with the intention of creating a "walled garden" around the event specific traffic so that it has little negative impact to the rest of the site.
+    * Consider separate hosted cache clusters, leveraging CDN, increasing cache lifetime client side, etc.
+    * Note, potential cost to data accuracy and consistency.
   * Further optimize performance by adding validation between API calls
   * Potentially migrate Express.js web server to Golang (or other more performant options)
     * Golang is better optimized for concurrency
@@ -187,6 +189,12 @@ Run tests with `yarn test`.
   * Create frontend app unit, integration, and functional tests
     * React Testing Library (for integration tests)
     * TestCafe + Testing Library (for functional tests)
+  * As per assumptions section if we expect 10 million products, 10% increase every year, and data is at 190 bytes with no change
+    * 10 million products * 190 bytes = 1.9 Gigabytes
+    * Allocate at least twice as much (around 4 Gigabytes) and have maintain multiple clouds across the country
+    * After 5 years => 10 million products * 110% ^ 5 years = 16 million products
+    * 16 million products * 190 bytes = 3 Gigabytes
+    * Database storage should not need upgrading at least for 5 years
 * Observability
   * Stream REST API logs to Splunk
     * Reliable streamed writes
@@ -201,12 +209,3 @@ Run tests with `yarn test`.
 </p>
 
 [Architecture Diagrams](/readme-assets/architecture.drawio)
-
-## Lessons Learned
-
-* Too much time spent on the frontend - need to keep focus on requirements
-  * Focus on immediate requirements to avoid over engineering
-* Excitement got the better of me, and I neglected to practice test driven development and wrote tests later
-  * Write tests first to help write more meaningful tests and implement more concise code
-* Need to consider testing strategy (particularly mocking data sources) before implementation
-  * Finding alternative methods to mocking external calls would not be as time-consuming
