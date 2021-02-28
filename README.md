@@ -31,6 +31,9 @@ To run the app with no external API dependencies, please run the server with `NO
 
 Run tests with `yarn test`.
 
+* Heroku app dashboard (private): <https://dashboard.heroku.com/apps/myretail-joon>
+* Heroku Redis dashboard (private): <https://data.heroku.com/datastores/7e227588-cb20-431a-9ad7-7c82bb17a502>
+
 ## Requirements
 
 * **Build a REST API that aggregates product data from multiple sources and responds with JSON**
